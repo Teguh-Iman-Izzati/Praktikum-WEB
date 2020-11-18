@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <select onchange="change_pic(this.value)">
+        <option value="Upin">Upin</option>
+        <option value="Ipin">Ipin</option>
+        <option value="Ehsan">Ehsan</option>
+        <option value="Mei-mei">Mei-mei</option>
+        <option value="Mail">Mail</option>
+        <option value="Susanti">Susanti</option>
+        <option value="Fizi">Fizi</option>
+    </select> <br>
+    <img src="" id="gambar" alt="">
+    <script>
+        function change_pic(set) {
+            var photo
+            if(set == 'Upin'){
+                photo = "img/Upin.png"
+                alert('Upin : "Lebih baik menjadi orang yang jujur dari pada munafik." ')
+            } else if(set == 'Ipin'){
+                photo = "img/gerrys.jpg"
+                alert('Ipin : "Betul betul betul betul betul" ')    
+            } else if(set == 'Ehsan'){
+                photo = "img/patrick.jpg"
+                alert('Ehsan : "Makanlah selagi dilimpahkan rezeqi sebelum makan itu dilarang." ')
+            } else if(set == 'Mei-mei'){
+                photo = "img/squidis.jpg"
+                alert('Mei-mei : "Apapun agamamu indonesia tetap Bhineka Tunggal Ika." ')
+            } else if(set == 'Mail'){
+                photo = "img/sandys.jpg"
+                alert('Mail : "Dalam berdagang kamu harus menimbang dengan jujur karna apabila tidak jujur jatuhnya akan riba"')
+            } else if(set == 'Susanti'){
+                photo = "img/crabs.jpg"
+                alert('Susanti : "Orang baik adalah dia yang melakukannya dengan ikhlas" ')
+            } else if(set == 'Fizi'){
+                photo = "img/plankton.jpg"
+                alert('Fizi : "Teman yang hebat adalah dia yang mau membantu menutupi segala kukarangan temannya." ')
+            }
+            console.log(photo);
+            document.getElementById("gambar").src = photo
+        }
+    </script>
+    
+</body>
+</html>
